@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논리 연산자</title>
+</head>
+<body>
+    <h3>논리 연산자</h3>
+    <script>
+        //논리 연산은 비교 연산이 2개 이상인 경우를 말한다.
+        //&& - 논리곱, || - 논리합, ! - 논리부정
+        var n1 = 8, n2=5;
+        var result;
+
+        //논리곱
+        console.log((n1>n2) && (n1!=n2));  //true && true -> true
+        console.log((n1>n2) && (n1==n2));  //true && false -> false
+        console.log(n1<=n2) && (n1!=n2);  //false && true -> false
+        console.log(n1<=n2) && (n1==n2);  //false && false -> false
+
+        //논리합
+        console.log((n1>n2) || (n1!=n2));  //true && true -> true
+        console.log((n1>n2) || (n1==n2));  //true && false -> true
+        console.log(n1<=n2) || (n1!=n2);  //false && true -> true
+        console.log(n1<=n2) || (n1==n2);  //false && false -> false
+
+        //논리부정
+        console.log(!n1>n2);  //!true -> false
+        console.log(!n1==n2);  //!false -> true
+    </script>
+</body>
+</html>

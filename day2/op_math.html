@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>산술 연산자</title>
+</head>
+<body>
+    <h3>산술 연산자</h3>
+    <script>
+        var num1 = 10;
+        var num2 = 4;
+
+        document.write("num1 + num2 = " + (num1+num2)+'<br>');  //14
+        document.write("num1 - num2 = " + (num1-num2)+'<br>');  //6
+        document.write("num1 * num2 = " + (num1*num2)+'<br>');  //40
+        document.write("num1 / num2 = " + (num1/num2)+'<br>');  //2.5
+        document.write("num1 % num2 = " + (num1%num2)+'<br>');  //2(나머지 연산자 이다.)
+
+        //1 증가하는 연산자 : '++'
+        num1++;     //num1=num1+1
+        document.write("num1 = " + num1+'<br>');     //10
+        
+
+        //1 감소하는 연산자 : '--'
+        num2--;
+        document.write("num2 = "+num2+'<br>');     //3
+
+        //2증가
+        num1 += 2;  //num=num+2
+        document.write("num1 = "+ num1 + '<br>');    //13
+
+        //2감소
+        num2 -= 2;  //num=num+2
+        document.write("num2 = "+ num2 + '<br>');    //1
+
+        //결과값 출력
+        document.write("결과값 : num1 = " + num1 + ", num2 = " + num2);
+
+
+    </script>
+</body>
+</html>

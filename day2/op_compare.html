@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>비교(관계) 연산자</title>
+</head>
+<body>
+    <h3>비교 연산자</h3>
+    <script>
+        var x = 7;
+        var y = 4;
+        var z = "7";
+
+        console.log(x>y);    //7>4 = true
+        console.log(x<y);    //7<4 = false
+        console.log(x==y);    //7==4 = false
+        console.log(x!=y);    //7!=4 = true  '!='는 같지 않다는 뜻이다.
+
+        console.log(x==z);    //7=="7" = false true(숫자 == 문자 이므로 false여야 함)
+        console.log(x===z);    //fasle("==="이 옳은 연산자이다.)
+    
+    </script>
+</body>
+</html>

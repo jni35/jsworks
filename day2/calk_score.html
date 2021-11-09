@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>과목의 성적 처리</title>
+</head>
+<body>
+    <h3>과목의 총점과 평균 계산하기</h3>
+    <script>
+        var kor = 90;   //국어변수
+        var eng = 80;   //영어변수
+        var math = 70;  //수학점수
+        var total = 0;  //총점을 저장할 변수
+        var avg = 0.0;  //평균을 저장할 변수
+
+        //총점 계산
+        total=kor+eng+math;
+        
+        //평균계산
+        avg=total/3;
+
+        alert("총점 : " + total);
+        alert("평균 : " + avg.toFixed(1))
+
+        document.write("총점 : " + total+"<br>"+"평균 : " + avg.toFixed(1)+"<br>");
+        //소수점 자리수 설정(toFixed(자리수))
+        
+        console.log("총점 : " + total)
+    </script>
+</body>
+</html>
