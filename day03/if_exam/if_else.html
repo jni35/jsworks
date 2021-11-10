@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if ~ else 구문</title>
+    <style>
+        p{color: #f00; font-weight: 700;}
+    </style>
+</head>
+<body>
+    <h3>if ~ else 구문 사용하기</h3>
+    <script>
+        //나이가 15세 이상이면 "관람가", 아니면 "관람불가"를 출력하는 프로그램
+        //입력(저장)
+        // var age = 14;
+        var age = prompt("나이를 입력하세요.");
+
+        //처리(계산) - 분기문 작성
+        if(age != null){
+            if(age>=15){//(비교문)
+                document.write("<p>관람가</p>");
+                document.write("나이는"+age+"세입니다.");}
+            else{//(age<15)
+                document.write("<p>관람불가</p>");
+                document.write("나이는"+age+"세입니다.");}
+        }
+        else{document.write("입력이 취소되었습니다.<br>")}
+
+        //결과(출력)
+        // document.write("나이는"+age+"세입니다.");
+    </script>
+</body>
+</html>

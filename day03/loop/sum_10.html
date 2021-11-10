@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - while</title>
+</head>
+<body>
+    <h2>반복문</h2>
+    <script>
+        //자연수 1부터 10까지 합계 계산하는 프로그램
+        //변수 생성
+        var n = 0;
+        var sum = 0;
+
+        while (n < 10) {
+            n++;
+            sum = sum + n;
+            console.log("n = " + n + ", sum = " +sum)
+        }
+
+        //결과
+        document.write("합계 : " + sum);
+
+        /*
+        n       sum
+        0       0
+        1       1
+        2       3
+        3       6
+        4       10
+        5       15
+        .       .
+        .       .
+
+
+
+
+        */
+
+
+        /*
+            n=n+1;  //1
+            n=n+2;  //3
+            n=n+3;  //6
+            //...n = n + 10;
+        */
+
+
+    </script>
+</body>
+</html>
