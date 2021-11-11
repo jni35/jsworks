@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>중첩 for 문</title>
+</head>
+<body>
+    <h3>중첩 for 문</h3>
+    <script>
+        var i = 0;
+        var j = 0;
+
+        for(i =1; i<=5; i++){
+            for(j =1; j<=5; j++){
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+
+        /*
+        i=1(1행), j=1,2,3,4,5  가가가가가
+        i=2(2행), j=1,2,3,4,5  가가가가가
+        i=3(3행), j=1,2,3,4,5  가가가가가
+        i=4(4행), j=1,2,3,4,5  가가가가가
+        i=5(5행), j=1,2,3,4,5  가가가가가
+        */
+
+        //직각삼각형 모양 출력
+        /*
+        *
+        **
+        ***
+        ****
+        *****
+        */
+
+        for(i =1; i<=5; i++){
+            for(j =1; j<=i; j++){
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+
+        /*
+        i=1(1행), j(열)=1           가
+        i=2(2행), j(열)=1,2         가가
+        i=3(3행), j(열)=1,2,3       가가가
+        i=4(4행), j(열)=1,2,3,4     가가가가
+        i=5(5행), j(열)=1,2,3,4,5   가가가가가
+        */
+
+        for(i=1; i<=5; i++){
+            for(j=1; j<=6-i; j++){
+                document.write('*');
+            }
+            document.write('<br>');
+        }
+    </script>
+</body>
+</html>

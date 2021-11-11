@@ -4,9 +4,12 @@
     while(true) ~ if ~ break (반복 조건문) 
 */
 
+var key = ""; //문자 초기화("공백문자";), 숫자 초기화(0;), 공통(null;)
+
 while(true){
     //입력
-    var key = prompt("계속 반복할까요?", "y/n, n=종료");
+    key = prompt("계속 반복할까요?", "y/n, n=종료");
+
     //처리
     if(key == 'y' || key == 'Y') {
         alert("계속 반복합니다.");

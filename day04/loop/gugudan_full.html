@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구구단</title>
+    <style>
+        div{
+            display: inline-block;
+            border: 1px dotted #ccc;
+            margin: 10px;
+            padding: 0 10px 10px 10px;
+            line-height: 1.5em;
+        }
+        p{text-align: center;}
+        h2{padding-left: 20px;}
+
+    </style>
+</head>
+<body>
+    <h2>구구단</h2>
+    <script>
+        for(var i=2; i<=9; i++){
+            document.write("<div>");
+            for(var j = 1; j<=9; j++){
+            document.write("<p>"+i+"단</p>");
+            document.write( i +'x'+ j +'='+ (i*j)+'<br>');
+        }
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반족 조건문</title>
+</head>
+<body>
+    <script>
+        //1부터 더했을때 100이 넘는 자연수는 얼마인지 출력하는 프로그램
+
+        var num = 0, sum=0;
+
+        while(true){
+            num += 1;       //num = num + 1
+            sum += num;     //sum = sum + num
+
+            //if ~ break문
+            if(sum > 100) break;
+        }
+
+        //출력
+        document.write("num = " + num + "<br>");
+        document.write("sum = " + sum + "<br>");
+    </script>
+</body>
+</html>

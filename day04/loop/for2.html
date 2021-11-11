@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - for</title>
+</head>
+<body>
+    <script>
+        //1부터 30까지 자연수 및 개수를 출력
+        var i = 0;          //반복변수
+        var count = 0;      //개수
+
+        for(i = 1; i <= 30; i++){
+            //2의 배수를 출력
+            if(i % 3 == 0){
+                count++;    //count = count + 1
+                document.write(i + "");
+            }
+
+            /*
+            i = 3, count = 0 + 1
+            i = 6, count = 1 + 1
+            i = 9, count = 2 + 1
+            .
+            .
+            .
+            */
+           
+        }
+
+        document.write("<br>");
+        document.write("3의 배수의 개수 : " + count);
+    </script>
+</body>
+</html>
+
