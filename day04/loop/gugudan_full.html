@@ -13,8 +13,8 @@
             padding: 0 10px 10px 10px;
             line-height: 1.5em;
         }
-        p{text-align: center;}
         h2{padding-left: 20px;}
+        p{text-align: center;}
 
     </style>
 </head>
@@ -23,10 +23,11 @@
     <script>
         for(var i=2; i<=9; i++){
             document.write("<div>");
-            for(var j = 1; j<=9; j++){
             document.write("<p>"+i+"단</p>");
+            for(var j = 1; j<=9; j++){
             document.write( i +'x'+ j +'='+ (i*j)+'<br>');
         }
+        document.write("</div>");
     }
     </script>
 </body>
