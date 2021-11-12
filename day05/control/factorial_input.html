@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - for</title>
+</head>
+<body>
+    <h3>반복문 - for</h3>
+
+    <script>
+    //1부터 입력받은 수까지의 곱 계산(팩토리얼[계승])
+    var num = prompt("숫자를 입력하세요.","1")
+    var factor = 1;
+    var result = "";
+
+    for(var i = 1; i<=num; i++){
+        factor *= i;
+    }
+    
+    result = num + "! = " + factor; 
+    //결과
+    document.write(result);
+    
+    </script>
+</body>
+</html>

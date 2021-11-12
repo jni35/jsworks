@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 요소를 합치고, 연결하기</title>
+</head>
+<body>
+    <h2>배열 요소를 합치고, 연결하기</h2>
+    <script>
+        var nums = [1,2,3];
+        var chars = ["a","b","c","d"]
+
+        //배열 합치기 - concat()
+        var list = nums.concat(chars);
+
+        //list객체 출력
+        document.write(list + " <br>");
+        
+        //구분기호로 연결하기
+        document.write(nums.join("/")+"<br>");
+        document.write(chars.join(" : ")+"<br>");
+        document.write(chars.join()+"<br>");    //기본 컴마(,)로 연결
+
+    </script>
+</body>
+</html>

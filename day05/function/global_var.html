@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전역 변수의 유효 범위</title>
+</head>
+<body>
+    <h3>전역 변수의 유효 범위</h3>
+    <script>
+        //1증가 시키는 함수
+        /*
+        지역변수의 유효범위 
+        - 전역 공간에서 생성되고 프로그램이 종료되면 메모리에서 삭제된다.
+        */
+        function oneUp(){
+            x++;
+            return x;
+        }
+
+        var x=1;    //전역 변수
+        document.write("x = " + x +"<br>");
+
+        var num = oneUp();
+        document.write("num = " + num +"<br>");     //2
+        document.write("x = " + x +"<br>");     
+        
+        num = oneUp();
+        document.write("num = " + num +"<br>");     //3
+        document.write("x = " + x +"<br>");     
+        
+
+    </script>
+</body>
+</html>

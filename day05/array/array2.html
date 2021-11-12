@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>배열 - Array</title>
+</head>
+<body>
+    <h2>배열 - Array</h2>
+
+    <script>
+        //nums 이름의 배열을 생성
+        var nums = new Array(4);
+        
+        //기억(저장)
+        nums[0] = 10;
+        nums[1] = 20;
+        nums[2] = 30;
+        nums[3] = 40;
+
+        //배열의 개수
+        console.log(nums.length + "개");
+
+        //변경
+        nums[1] = 50;
+
+        //삭제
+        // delete nums[3];
+
+        //전체출력
+        for(var i =0; i<nums.length; i++){
+            document.write(nums[i]+" ");
+        }
+
+        document.write("<br>");
+
+        //연산
+        document.write(nums[0] + nums[1] + "<br>");
+        document.write(nums[1] + nums[2] + "<br>");
+
+        //합계
+        var sum = 0;
+        var avg;
+        for(var i =0; i<nums.length; i++){
+            sum += nums[i];     //sum=sum+nums[i]
+        }
+        document.write("합계 : " + sum);
+        //i=0, sum=0+10 ->10
+        //i=1, sum=10+50 ->60
+        //i=2, sum=60+30 ->90
+        //i=3, sum=90+40 ->130
+
+        //평균= 합계/개수
+        avg = sum / sum.length;
+        document.write("평균 : " + avg);
+    </script>
+</body>
+</html>

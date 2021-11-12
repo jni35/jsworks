@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>진수 표현</title>
+</head>
+<body>
+    <h3>진수 표현 및 문자 세트</h3>
+
+    <script>
+        //진수 표현
+        var num =10;
+        var bNum = 0b1010;      //2진수 표기법 - 0b로 시작
+        var hNum = 0x4;         //16진수 표기법 - 0x로 시작
+
+        document.write(num + "<br>")
+        document.write(bNum + "<br>")
+        document.write(hNum + "<br>")
+
+        //문자 세트 - 아스키 코드, 유니 코드
+        var ch1 = 65;           //아스키 코드값
+        document.write(ch1+"<br>");
+        document.write(String.fromCharCode(ch1)+"<br>");
+        
+        var ch2 ='B';
+        document.write(ch2+"<br>");
+        document.write(ch2.charCodeAt(0)+"<br>");       //0은 첫문자의 코드값
+
+        //유니코드
+        var ch3 ='가';
+        document.write(ch3+"<br>");
+        document.write(ch3.charCodeAt(0)+"<br>");
+
+        var ch4 ='나';
+        document.write(ch4+"<br>");
+        document.write(ch4.charCodeAt(0)+"<br>");
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반복문 - for</title>
+</head>
+<body>
+    <h3>반복문 - for</h3>
+
+    <script>
+    //1~10까지 곱 계산(팩토리얼[계승])
+    var result = 1;     //곱셈은 1로 초기화
+    for(var i=1; i<=5; i++){
+        result *= i;    //result = resule*i;
+    } 
+
+    /*
+    i=1, 1*1,  result=1      1!
+    i=2, 1*2,  result=2      2!
+    i=3, 2*3,  result=6      3!
+    i=4, 6*4,  result=24     4!
+    i=5, 24*5, result=120    5!
+    */
+
+    document.write("결과 : " + result );
+    
+    </script>
+</body>
+</html>
