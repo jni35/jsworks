@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 정의와 호출</title>
+</head>
+<body>
+    <h2>구구단</h2>
+    <script>
+    //구구단 4단
+    function gugudan(dan){  //매개변수
+
+        for(var i=1; i<=9; i++){
+            document.write(dan + "x" + i + "=" +(dan*i)+ "<br>");
+        }
+    }
+
+    gugudan(7);  //호출
+    
+    
+    // 지역변수의 유효범위 
+    // - 코드블럭 안에서 생성되고 블럭을 벗어나면 메모리에서 삭제된다.
+    // function square(x){return x*x;}     //지역변수
+    var square = function(x){ return x*x;}      //익명함수
+    
+    var num = square(6);    //제곱이 반환된 값
+    document.write("num = " + num);
+    document.write("x = " + x);     //x is not defined - 지역변수
+    
+
+    </script>
+</body>
+</html>

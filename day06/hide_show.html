@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 숨기기, 보이기</title>
+</head>
+<body>
+    <h2>이미지 숨기기 및 보이기</h2>
+    <!-- <img src="../images/img3.jpg" alt="오리" onclick="hide()" id="pic"> -->
+    <img src="../images/img3.jpg" alt="오리" 
+    onmouseover="hide()" onmouseout="show()" id="pic">
+    <script>
+        function hide(){
+            document.getElementById("pic").style.display = "none";
+        }
+        function show(){
+            document.getElementById("pic").style.display = "block";
+        }
+    </script>
+</body>
+</html>

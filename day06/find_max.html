@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최대값 찾기</title>
+</head>
+<body>
+    <h3>최대값, 최소값 찾기</h3>
+    <script>
+        //숫자를 저정하는 배열 생성
+        var nums = [17, 33, 25, 92, 56, 8];
+
+        //최대값 찾기
+        // 1. 첫 번째 값을 최대값으로 설정
+        var maxVal = nums[0]; 
+
+        //2. 반복문을 넣어서 최대값 찾기
+        for(var i=1; i<nums.length; i++){
+            if(maxVal < nums [i])
+            maxVal = nums[i];
+        }
+        //i=1, maxVal<nums[1], maxVal=17
+        //i=2, maxVal<nums[2], maxVal=33
+        //i=3, maxVal<nums[3], maxVal=33
+        //i=4, maxVal<nums[4], maxVal=92
+        //i=5, maxVal<nums[5], maxVal=92
+        //i=6, maxVal<nums[6], maxVal=92
+
+        //3. 출력
+        document.write("최대값 : "+maxVal+"<br>");
+
+        //최소값 찾기
+        var minVal = nums[0];
+
+        for(var i=1; i<nums.length; i++){
+            if(minVal > nums [i])
+            minVal = nums[i];
+        }
+        //i=1, minVal>nums[1], minVal=17
+        //i=2, minVal>nums[2], minVal=17
+        //i=3, minVal>nums[3], minVal=17
+        //i=4, minVal>nums[4], minVal=17
+        //i=5, minVal>nums[5], minVal=17
+        //i=6, minVal>nums[6], minVal=8
+
+        document.write("최소값 : "+minVal);
+
+
+    </script>
+</body>
+</html>

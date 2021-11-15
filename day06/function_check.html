@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>함수의 사용</title>
+</head>
+<body>
+    <h2>함수의 사용</h2>
+    <button onclick="fnCheck()">로그인</button>
+    <p id="demo"></p>
+
+    <script>
+
+        // function fnCheck(){
+        //     alert("아이디나 비밀번호가 일치하지 않습니다.");
+        // }
+        
+        //익명함수로 만들기
+        var fnCheck = function(){
+            // document.write("아이디나 비밀번호가 일치하지 않습니다.");
+            document.getElementById("demo").innerHTML = "아이디나 비밀번호가 일치하지 않습니다.";
+        }
+    </script>
+</body>
+</html>

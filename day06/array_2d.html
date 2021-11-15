@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2차원 배열</title>
+</head>
+<body>
+    <h2>2차원 배열</h2>
+    <script>
+        //2행 3열의 nums 배열 생성
+        var nums = [[1,2,3],[10,20,30]]
+        var count =0;
+        var sum =0, avg;
+        //인덱싱 - 위치 찾기
+        document.write(nums[0][0]+"<br>")
+        document.write(nums[0][1]+"<br>")
+        document.write(nums[0][2]+"<br>")
+        document.write(nums[1][0]+"<br>")
+        document.write(nums[1][1]+"<br>")
+        document.write(nums[1][2]+"<br>")
+
+        //배열의 개수
+        document.write("배열의 개수(행) : " + nums.length + "<br>")
+        document.write("배열의 개수(열) : " + nums[0].length + "<br>")
+
+        //출력
+        for(var i=0; i<nums.length; i++){
+            for(var j=0; j<nums[i].length; j++){
+                count += 1;     //갯수의 합
+                sum += nums[i][j];  //값의 합
+                document.write(nums[i][j] + " ")
+            }
+        }
+        
+        avg = sum/count;
+
+        document.write("<br>")
+        document.write("배열의 요소의 개수 : " + count + "<br>")
+        document.write("배열의 합개 : " + sum + "<br>")
+        document.write("배열의 평균 : " + avg + "<br>")
+
+    </script>
+</body>
+</html>
