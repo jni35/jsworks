@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math 객체 사용하기</title>
+</head>
+<body>
+    <h3>Math 객체</h3>
+
+    <script>
+        //원주율
+        console.log(Math.PI);   //3.14...
+
+        //반올림
+        console.log(Math.round(12.61));     //13
+        console.log(Math.round(12.11));     //12
+
+        //버림(소수점 이하 버림 - 정수로 표기)
+        console.log(Math.floor(3.3));       //3
+        console.log(Math.floor(3.9));       //3
+
+        //절대값
+        console.log(Math.abs(-4));          //4
+        console.log(Math.abs(4));           //4
+        
+        //거듭제곱
+        console.log(Math.pow(2,5));
+        console.log(Math.pow(4,3));
+        
+        //랜덤(0이상 1미만의 실수)
+        console.log(Math.random());
+
+        //주사위 눈(1~6) 출력
+        let dice = Math.random()*6+1;
+        console.log(Math.floor(dice));
+
+
+
+
+    </script>
+</body>
+</html>

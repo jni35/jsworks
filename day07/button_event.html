@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>버튼 이벤트 효과</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        #item{width: 500px; margin: 30px auto; position: relative;}
+        h2{padding: 20px 10px 15px 20px;}
+        .open_btn{position: absolute; bottom: 20px; left: 20px; }
+        .text{width: 400px; line-height: 1.5em; display: none;}
+    </style>
+</head>
+<body>
+    <div id="item">
+        <h2>한국의 꽃</h2>
+        <img src="../images/flower1.jpg" alt="민들레">
+        <button onclick="showText()" class="open_btn" id="open">상세 설명 보기</button>
+        
+        <div class="text" id="desc">
+            <h4>민들레</h4>
+            <p>어디서나 매우 흔하게 보이는 잡초로써 바닥에 딱 붙어서 꽃봉오리 하나가 쑥 올라온다. 
+                톱니 모양의 잎새와 눈에 확 띄는 노란 꽃이 인상적이다. 
+                특히, 꽃이 지고 나면 솜털 모양의 깃을 가진 씨앗들이 나오는데 바람을 타고 날아가서 널리 퍼진다.
+            </p>
+            <button onclick="hidenText()" class="hiden_btn">상세 설명 닫기</button>
+        </div>
+    </div>
+
+    <script src="./js/event.js"></script>
+</body>
+</html>

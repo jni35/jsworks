@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이벤트 당첨자 발표</title>
+    <style>
+        body{text-align: center;}
+        h1{display: inline-block;
+            border: 1px solid #333;
+            background-color: #eee;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        p{font-size: 1.2em;}
+        .access{color: #00f; font-size: 1.5em;}
+
+    </style>
+</head>
+<body>
+    <h1>당첨자 발표</h1>
+
+    <script>
+        let menber = prompt("전체 응모자 수 : ");
+        let winner = prompt("당첨자 수 : ");
+
+        document.write("<p>전체 응모자 수 : " + menber + "명</p>");
+        document.write("당첨자 : ");
+        
+        for(let i = 1; i<=winner; i++){
+            let picked = Math.floor(Math.random()*menber +1);
+            if(i<winner) document.write("<span class = 'access'>" + picked + "</span>번, ");
+            else document.write("<span class = 'access'>" + picked + "</span>번");
+        }
+    </script>
+</body>
+</html>
