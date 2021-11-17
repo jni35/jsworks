@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>날짜 계산 프로그램</title>
+    <style>
+        #container{
+            width: 300px;
+            height: 300px;
+            border: 2px solid #333;
+            border-radius: 50%;
+            background-color: #0f0;
+            margin: 50px auto;
+            text-align: center;
+        }
+        h2{padding-top: 60px;}
+        span{font-size: 1.5em; color: red; font-weight: 700;}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>지금까지 몇 일?</h2>
+        <p>개강 이후 <span id="day"></span> 일 지났습니다.</p>
+    </div>
+        
+    <script>
+        var now = new Date();       //현재날짜
+        var day1 = new Date("2021-10-26");      //특정한 날
+        
+        var passedTime = now.getTime()-day1.getTime();
+        passedTime = Math.floor(passedTime/(24*60*60*1000));
+        //ms(밀리초)이므로 1000을 나눈다.
+        
+        document.getElementById("day").innerHTML = passedTime;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>qurySelectorAll() 사용하기</title>
+</head>
+<body>
+    <h2 id="heading">국가의 수도(Capital)</h2>
+    <p>대한민국의 수도는 서울입니다.</p>
+
+    <h2>세계의 수도</h2>
+    <ul>
+        <li class="city">베를린</li>
+        <li class="city">베이징</li>
+        <li class="city">워싱턴</li>
+        <li class="city">도쿄</li>
+    </ul>
+
+    <script>
+        // document.getElementById("heading").style.color="#00f";
+        document.querySelector("#heading").style.color="#f00";
+
+        // 여러개를 선택할 때 - querySelectorAll(".city") 사용
+        document.querySelectorAll(".city")[0].style.color="#0f0";
+        
+        //
+        var cityList = document.querySelectorAll(".city")
+        cityList[3].style.color="red";
+
+        document.write("배열의 개수 : " + cityList.length + "개");
+
+        for(var i=0; i<cityList.length; i++){
+            cityList[i].style.backgroundColor = "#ccc";
+        }
+    </script>
+</body>
+</html>

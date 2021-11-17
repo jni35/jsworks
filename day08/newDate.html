@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date 객체 사용하기</title>
+</head>
+<body>
+    <h2>날짜/시간을 알려주는 Date 객체</h2>
+    <script>
+        var now = new Date();
+        document.write("==========날짜==========<br>");
+        document.write("현재 시각 : " + now + "<br>");
+        document.write("현재 시각 : " + now.toLocaleString() + "<br>");
+        
+        document.write("현재 년도 : " + now.getFullYear() + "<br>");
+        document.write("현재 월 : " + (now.getMonth()+1) + "<br>");
+        document.write("현재 날짜 : " + now.getDate() + "<br>");
+        document.write("현재 요일 : " + now.getDay() + "<br>");
+
+        document.write("==========시간==========<br>");
+        document.write("현재 시각 : " + now.toLocaleTimeString() + "<br>");
+        // 1970. 1. 1 자정이후 - 유닉스 운영체제 기준
+        document.write("현재까지의 시간(ms(1/1000)초로 환산) : " + now.getTime()/1000 + "<br>");
+        document.write("현재 시 : " + now.getHours() + "<br>");
+        document.write("현재 시 : " + now.getMinutes() + "<br>");
+        document.write("현재 시 : " + now.getSeconds() + "<br>");
+        
+
+
+        </script>
+</body>
+</html>

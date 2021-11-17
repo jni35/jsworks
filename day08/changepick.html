@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체의 onclick속성 사용하기</title>
+</head>
+<body>
+    <h2>객체의 onclick속성 사용하기</h2>
+    <img src="./images/cup-1.png" alt="컵" id="pic">
+    
+    <script>
+        //객체 생성
+        var pic = document.querySelector('#pic');
+        
+        //함수 () 생략
+        pic.onclick = changePic;
+
+        function changePic(){
+            pic.src = "./images/cup-2.png";
+        }
+
+    </script>
+</body>
+</html>
