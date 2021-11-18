@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체를 만들고 사용하기</title>
+</head>
+<body>
+    <h2>객체의 정의와 사용</h2>
+    <script>
+        //선수 1명의 객체를 정의
+        //속성(나이, 이름..) + 기능(함수)
+        //키(key) : 값(value) ->json데이터
+        var player = {
+            name : "추신수", //name = "추신수"
+            age : 40,
+            isMerreid : true,
+
+            play : function(){
+                alert("홈런을 친다!");
+            }
+
+        };
+
+        document.write("이름 : "+player.name+"<br>");
+        document.write("나이 : "+player.age+"<br>");
+        document.write("결혼 : "+player.isMerreid+"<br>");
+        player.play();
+    </script>
+</body>
+</html>

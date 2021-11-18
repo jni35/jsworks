@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>객체를 만들고 사용하기</title>
+</head>
+<body>
+    <h2>객체의 정의와 사용</h2>
+    <script>
+        // 생성자 함수를 사용하여 객체 만들기
+        function Player(name, age, isMerried){
+            this.name = name;   
+            this.age = age;
+            this.isMerried = isMerried;
+
+            this.info = function(){
+                if(this.isMerried == true)
+                    document.write("기혼 입니다.<br>")
+                else
+                    document.write("미혼 입니다.<br>")
+            }
+
+            this.play = function(){
+                document.write("골을 넣습니다.")
+
+            }
+
+        }
+        // 맴버변수 = 외부입력
+        // this.x=x 로 입력해 주기
+
+        var p1 = new Player("손흥민", 31, false);
+        var p2 = new Player("안산", 21, false);
+        var p3 = new Player("추신수", 40, true);
+
+        //배열 객체로 관리
+        var player = [p1,p2,p3];
+        document.write("선수 명단 : ")
+        for(let i = 0; i<player.length; i++){
+            document.write (player[i].name + " ");
+        }
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>자동차 객체 만들기</h2>
+    <script>
+        var car = {
+            brand :  "현대",
+            name : "소나타",
+            color : "black",
+            cc : 2500,
+
+            fuel : function(){
+                document.write("연료를 주입한다.")
+
+            }
+        };
+
+        document.write(car.brand+" "+car.name+"<br>")
+        document.write("색상 : "+car.color+", 배기량 : "+car.cc+"cc<br>")
+        car.fuel();     //();표기 해주어야 내용이 표시된다.
+    </script>
+</body>
+</html>

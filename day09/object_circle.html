@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원 객체 만들기</title>
+</head>
+<body>
+    <h2>원의 면적과 둘레 구하기</h2>
+    <script>
+        //원의 면적 : Math.PI*반지름*반지름
+        function Circle(radius){
+            this.radius = radius;
+
+            this.getArea = function(){
+                var area = Math.PI*radius*radius;
+                return area;
+            }
+        }
+        // 원의 둘레
+        this.getLenght = function(){
+            var length = 2*Math.PI*radius;
+            return length;
+        }
+
+        var c1 = new Circle(4);
+        // document.write(c1.radius);
+        document.write("원의 면적 : " +c1.getArea().toFixed(2)+"<br>");
+        document.write("원의 둘레 : " +c1.getArea().toFixed(2)+"<br");
+
+
+
+    </script>
+</body>
+</html>

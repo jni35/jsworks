@@ -1,6 +1,6 @@
 //이미지 선택
-var slides = document.querySelectorAll(".slides.img")
-let current = 1;
+var slides = document.querySelectorAll(".slides img")
+let current = 0;
 let next = document.getElementsById("next");
 let prev = document.getElementsById("prev");
 
