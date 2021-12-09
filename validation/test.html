@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test() 함수 사용</title>
+</head>
+<body>
+    <p>test()는 일치된 것을 찾으면 true, 못찾으면 false를 반환</p>
+    <script>
+        //문자열 일치 검사
+        var pat = new RegExp('H');
+        var m = pat.test("hello~")
+        document.write("결과:" + m);
+        document.write("<br>");
+
+
+        //아이디 글자수 체크
+        var id_pat = /^[0-9A-Za-z]{5}$/;    /* /^ - 시작, $/ - 끝*/
+        id = "012ab";
+        document.write("결과 : " + id_pat.test(id))
+    </script>
+</body>
+</html>
